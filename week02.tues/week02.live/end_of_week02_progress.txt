@@ -1,0 +1,4 @@
+were able to write task4, but got a stack crash on execution.  Next steps:
+explore _CRT_NO_WARNINGS
+explore debugging
+explore scanf_s

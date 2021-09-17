@@ -1,0 +1,2 @@
+﻿  Source.c
+C:\Users\steve\OneDrive\ownCloud\_PROG71985\PROG71985F21\week02.wed\week02.live\task4\Source.c(12,2): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
