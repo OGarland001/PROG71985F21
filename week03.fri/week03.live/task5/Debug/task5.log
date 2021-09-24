@@ -1,0 +1,3 @@
+﻿  Source.c
+C:\Users\steve\OneDrive\ownCloud\_PROG71985\PROG71985F21\week03.fri\week03.live\task5\Source.c(26,2): error C2146: syntax error: missing ';' before identifier 'printf'
+C:\Users\steve\OneDrive\ownCloud\_PROG71985\PROG71985F21\week03.fri\week03.live\task5\Source.c(35,2): error C2143: syntax error: missing ';' before 'return'
