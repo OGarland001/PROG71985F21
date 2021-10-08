@@ -1,0 +1,3 @@
+﻿  Professor.c
+C:\Users\steve\OneDrive\ownCloud\_PROG71985\PROG71985F21\week05.wed\week05.live\theClassroom\Professor.c(10,11): warning C4013: 'strncpy_s' undefined; assuming extern returning int
+  theClassroom.vcxproj -> C:\Users\steve\OneDrive\ownCloud\_PROG71985\PROG71985F21\week05.wed\week05.live\Debug\theClassroom.exe
