@@ -1,0 +1,9 @@
+﻿  CleanInput.c
+  Participant.c
+  Professor.c
+  Source.c
+C:\Users\steve\OneDrive\ownCloud\_PROG71985\PROG71985F21\week06.fri\week06.live\TheClassroom\Source.c(12,14): warning C4101: 'p0': unreferenced local variable
+C:\Users\steve\OneDrive\ownCloud\_PROG71985\PROG71985F21\week06.fri\week06.live\TheClassroom\Source.c(16,14): warning C4101: 'p1': unreferenced local variable
+  Student.c
+  Generating Code...
+  TheClassroom.vcxproj -> C:\Users\steve\OneDrive\ownCloud\_PROG71985\PROG71985F21\week06.fri\week06.live\x64\Debug\TheClassroom.exe
