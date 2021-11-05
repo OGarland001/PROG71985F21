@@ -1,0 +1,47 @@
+$ gcc -o main -g Classroom.c CleanInput.c Participant.c Professor.c Source.c  Student.c
+$ valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes ./main
+==415922== Memcheck, a memory error detector
+==415922== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==415922== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==415922== Command: ./main
+==415922==
+Student: jimminy cricket, 2000011234
+Professor: steve hendrikse, Computer Science & Eng.
+Professor: steve hendrikse, Computer Science & Eng.
+Student: jimminy cricket, 2000011234
+Classroom name: PROG71985
+Classroom has 0 students of a maximum of 10
+classroom capacity: 10
+current number of students: 0
+add prof.
+current number of students: 1
+add student
+current number of students: 2
+save classroom c
+create classroom d and load from disk
+print classroom d
+Classroom name: PROG71985
+Classroom has 2 students of a maximum of 10
+Professor: steve hendrikse, Computer Science & Eng.
+Student: jimminy cricket, 2000011234
+==415922==
+==415922== FILE DESCRIPTORS: 3 open at exit.
+==415922== Open file descriptor 2: /dev/pts/1
+==415922==    <inherited from parent>
+==415922==
+==415922== Open file descriptor 1: /dev/pts/1
+==415922==    <inherited from parent>
+==415922==
+==415922== Open file descriptor 0: /dev/pts/1
+==415922==    <inherited from parent>
+==415922==
+==415922==
+==415922== HEAP SUMMARY:
+==415922==     in use at exit: 0 bytes in 0 blocks
+==415922==   total heap usage: 5 allocs, 5 frees, 10,160 bytes allocated
+==415922==
+==415922== All heap blocks were freed -- no leaks are possible
+==415922==
+==415922== For lists of detected and suppressed errors, rerun with: -s
+==415922== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+$
