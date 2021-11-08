@@ -1,0 +1,13 @@
+﻿  item.c
+  ListADT.c
+  listNode.c
+  Source.c
+  Generating Code...
+ListADT.obj : error LNK2019: unresolved external symbol _CreateNode referenced in function _AddItemToList
+Source.obj : error LNK2001: unresolved external symbol _CreateNode
+ListADT.obj : error LNK2019: unresolved external symbol _GetNodeNextNode referenced in function _AddItemToList
+ListADT.obj : error LNK2019: unresolved external symbol _SetNodeNextNode referenced in function _AddItemToList
+ListADT.obj : error LNK2019: unresolved external symbol _DisposeNode referenced in function _RemoveItemFromList
+Source.obj : error LNK2001: unresolved external symbol _DisposeNode
+Source.obj : error LNK2019: unresolved external symbol _DisposeList referenced in function _main
+C:\Users\steve\OneDrive\ownCloud\_PROG71985\github\week10\Debug\ex2.exe : fatal error LNK1120: 5 unresolved externals
