@@ -140,12 +140,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CleanInput.h" />
     <ClInclude Include="item.h" />
     <ClInclude Include="ListADT.h" />
     <ClInclude Include="listNode.h" />
     <ClInclude Include="Student.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CleanInput.c" />
     <ClCompile Include="item.c" />
     <ClCompile Include="ListADT.c" />
     <ClCompile Include="listNode.c" />

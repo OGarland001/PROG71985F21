@@ -47,3 +47,27 @@ STUDENT streamReadStudent(FILE* fp)
 	STUDENT s = CreateStudent(nameBuffer, studentNumber);
 	return s;
 }
+
+bool CompareStudents(STUDENT a, STUDENT b)
+{
+	if (a.studentnum == b.studentnum)
+		return true;
+	else
+		return false;
+}
+
+
+/// <summary>
+/// take an existing student instance and create a new one with the same values.
+/// </summary>
+/// <param name="s"></param>
+/// <returns></returns>
+STUDENT CopyStudent(STUDENT s)
+{
+	return(CreateStudent(s.name, s.studentnum));
+}
+
+void DisposeStudent(STUDENT s)
+{
+	;
+}

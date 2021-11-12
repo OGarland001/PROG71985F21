@@ -1,4 +1,4 @@
-#include "item.h"
+#include "Student.h"
 #include "listNode.h"
 #include "ListADT.h"
 
@@ -18,32 +18,32 @@
 
 int main(void)
 {
-	ITEM testItem = CreateItem(99);
-	DisplayItem(testItem);
+	STUDENT testStudent = CreateStudent("steveh", 99);
+	PrintStudent(testStudent);
 
-	PLISTNODE newNode = CreateNode(testItem);
+	// out of place  (should be hidden)
+	PLISTNODE newNode = CreateNode(testStudent);
 
 	LIST myList = CreateList();
 
-	if (!AddItemToList(&myList, testItem))
+	if (!AddStudentToList(&myList, testStudent))
 	{
 		fprintf(stderr, "failed to add item to list\n");
 	}
 
-	for (int i = 98; i > 90; i--)
+
+	if (!AddStudentToList(&myList, CreateStudent("steveh", 98)))
 	{
-		if (!AddItemToList(&myList, CreateItem(i)))
-		{
-			fprintf(stderr, "failed to add item to list\n");
-		}
+		fprintf(stderr, "failed to add item to list\n");
 	}
 
+
 	Display(myList);
-	RemoveItemFromList(&myList, CreateItem(96));
+	RemoveStudentFromList(&myList, CreateStudent("steve", 98));
 	Display(myList);
 
 	DisposeList(&myList);
 	DisposeNode(newNode);
-	DisposeItem(testItem);
+	DisposeStudent(testStudent);
 }
 

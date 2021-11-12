@@ -11,21 +11,21 @@
 //      1.1      2021-Jun-24          reviewed and updated
 //
 
-ITEM CreateItem(int i)
+STUDENT CreateStudent(int i)
 {
-	ITEM item;
+	STUDENT item;
 	item.data = i;
 	return item;
 }
 
-ITEM CopyItem(ITEM item)
+STUDENT CopyStudent(STUDENT item)
 {
-	ITEM copy;
+	STUDENT copy;
 	copy.data = item.data;
 	return copy;
 }
 
-bool CompareItems(ITEM itemA, ITEM itemB)
+bool CompareStudents(STUDENT itemA, STUDENT itemB)
 {
 	if (itemA.data == itemB.data)
 		return true;
@@ -33,12 +33,12 @@ bool CompareItems(ITEM itemA, ITEM itemB)
 		return false;
 }
 
-void DisplayItem(ITEM item)
+void PrintStudent(STUDENT item)
 {
 	printf("item data: %d\n", item.data);
 }
 
-void DisposeItem(ITEM item)
+void DisposeStudent(STUDENT item)
 {
 	//free(item); <-- no malloc, no free!
 	return;

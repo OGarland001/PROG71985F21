@@ -27,6 +27,9 @@
     <ClInclude Include="Student.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CleanInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="item.c">
@@ -42,6 +45,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Student.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CleanInput.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

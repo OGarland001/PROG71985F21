@@ -1,1 +1,8 @@
-﻿
+﻿  Classroom.c
+  CleanInput.c
+  Participant.c
+  Professor.c
+  Source.c
+  Student.c
+  Generating Code...
+C:\Users\steve\OneDrive\ownCloud\_PROG71985\PROG71985F21\week10.tues\Part1\TheClassroom\Student.c(21): error C4700: uninitialized local variable 's' used

@@ -9,7 +9,7 @@
 //		so:
 //		1) change char[] to char*
 //		2) refactor the functions
-//		3) implement RemoveStudent(STUDENT*) to free allocated memory
+//		3) implement DisposeStudent(STUDENT) to free allocated memory
 
 
 #pragma once
@@ -21,7 +21,7 @@
 
 typedef struct student
 {
-	char name[STUDENTLEN];
+	char* name;
 	int studentnum;
 } STUDENT;
 
@@ -30,3 +30,5 @@ void PrintStudent(STUDENT);
 
 void streamPrintStudent(FILE*, STUDENT);
 STUDENT streamReadStudent(FILE*);
+
+void DisposeStudent(STUDENT);

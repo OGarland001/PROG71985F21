@@ -1,5 +1,5 @@
 #pragma once
-#include "item.h"
+#include "Student.h"
 #include "listNode.h"
 #include <stdbool.h>
 
@@ -18,8 +18,8 @@ typedef struct ListADT
 }LIST, *PLIST;
 
 LIST CreateList();
-bool AddItemToList(PLIST, ITEM);
-void RemoveItemFromList(PLIST, ITEM);
+bool AddStudentToList(PLIST, STUDENT);
+void RemoveStudentFromList(PLIST, STUDENT);
 
 void Display(LIST);
 

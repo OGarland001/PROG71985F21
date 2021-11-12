@@ -47,3 +47,27 @@ STUDENT streamReadStudent(FILE* fp)
 	STUDENT s = CreateStudent(nameBuffer, studentNumber);
 	return s;
 }
+
+int GetStudentNumber(STUDENT s)
+{
+	return s.studentnum;
+}
+
+bool CompareStudents(STUDENT a, STUDENT b)
+{
+	if (GetStudentNumber(a) == GetStudentNumber(b))
+		return true;
+	else
+		return false;
+}
+
+STUDENT CopyStudent(STUDENT src)
+{
+	STUDENT s = CreateStudent(src.name, src.studentnum);
+	return(s);
+}
+
+void DisposeStudent(STUDENT s)
+{
+	; //nothing to be done.
+}

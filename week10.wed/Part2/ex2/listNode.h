@@ -1,5 +1,5 @@
 #pragma once
-#include "item.h"
+#include "Student.h"
 
 // declaration/definition of ListNode
 
@@ -12,11 +12,11 @@
 
 typedef struct listnode
 {
-	ITEM nodeData;
+	STUDENT nodeData;
 	struct listnode* next;
 }LISTNODE, *PLISTNODE;
 
-PLISTNODE CreateNode(ITEM);
+PLISTNODE CreateNode(STUDENT);
 
 PLISTNODE GetNodeNextNode(PLISTNODE);
 void SetNodeNextNode(PLISTNODE, PLISTNODE);

@@ -1,4 +1,4 @@
-#include "item.h"
+#include "Student.h"
 #include "listNode.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,7 +12,7 @@
 //      1.1      2021-Jun-24          reviewed and updated
 //
 
-PLISTNODE CreateNode(ITEM item)
+PLISTNODE CreateNode(STUDENT student)
 {
 	PLISTNODE newNode = (PLISTNODE)malloc(sizeof(LISTNODE));
 	if (!newNode)
@@ -20,7 +20,7 @@ PLISTNODE CreateNode(ITEM item)
 		fprintf(stderr, "error allocating memory\n");
 		exit(1);
 	}
-	newNode->nodeData = CopyItem(item);
+	newNode->nodeData = CopyStudent(student);
 	newNode->next = NULL;
 
 	return newNode;
@@ -38,6 +38,6 @@ void SetNodeNextNode(PLISTNODE sourceListNode, PLISTNODE newNextNode)
 
 void DisposeNode(PLISTNODE listNode)
 {
-	DisposeItem(listNode->nodeData);
+	DisposeStudent(listNode->nodeData);
 	free(listNode);
 }

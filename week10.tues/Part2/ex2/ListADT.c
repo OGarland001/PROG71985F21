@@ -1,5 +1,5 @@
 #include "ListADT.h"
-#include "item.h"
+#include "Student.h"
 #include <stdlib.h>
 
 // implementation of list ADT
@@ -17,9 +17,9 @@ LIST CreateList()
 	return newlist;
 }
 
-bool AddItemToList(PLIST thisList, ITEM thisItem)
+bool AddStudentToList(PLIST thisList, STUDENT thisStudent)
 {
-	PLISTNODE newNode = CreateNode(thisItem);
+	PLISTNODE newNode = CreateNode(thisStudent);
 
 	if (thisList->list == NULL)  //empty list.  
 	{
@@ -40,11 +40,11 @@ bool AddItemToList(PLIST thisList, ITEM thisItem)
 	return true;
 }
 
-void RemoveItemFromList(PLIST thisList, ITEM itemToBeDeleted)
+void RemoveStudentFromList(PLIST thisList, STUDENT studentToBeDeleted)
 {
 	PLISTNODE current = thisList->list;
 
-	if (CompareItems(current->nodeData, itemToBeDeleted))
+	if (CompareStudents(current->nodeData, studentToBeDeleted))
 	{
 		if (GetNodeNextNode(current) != NULL)  //info is in head.  and list is greater than 1 element
 			thisList->list = GetNodeNextNode(current);
@@ -55,7 +55,7 @@ void RemoveItemFromList(PLIST thisList, ITEM itemToBeDeleted)
 		return;
 	}
 	PLISTNODE prev = NULL;  // we will need the previous node for to link over the deleted one
-	while (current != NULL && !CompareItems(current->nodeData, itemToBeDeleted))
+	while (current != NULL && !CompareStudents(current->nodeData, studentToBeDeleted))
 	{
 		prev = current;
 		current = GetNodeNextNode(current);
@@ -78,7 +78,7 @@ void Display(LIST thisList)
 		PLISTNODE current = thisList.list;
 		do
 		{
-			DisplayItem(current->nodeData);
+			PrintStudent(current->nodeData);
 			current = GetNodeNextNode(current);
 		} while (current != NULL);
 	}

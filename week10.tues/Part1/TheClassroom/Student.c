@@ -7,6 +7,7 @@
 #include "CleanInput.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 /// <summary>
 /// function to create properly formatted student ADT
@@ -17,6 +18,15 @@
 STUDENT CreateStudent(char Name[], int StudentNum)
 {
 	STUDENT s;
+
+	int length = sizeof(char) * (strlen(Name));
+	s.name = (char*)malloc(length);
+	if (s.name == NULL)
+	{
+		fprintf(stderr, "error allocating memory\n");
+		exit(1);
+	}
+	memset(s.name, 0, length);
 #ifdef  _MSC_VER
 	strncpy_s(s.name, STUDENTLEN, Name, STUDENTLEN);
 #else
@@ -46,4 +56,9 @@ STUDENT streamReadStudent(FILE* fp)
 	fscanf(fp, "%d\n", &studentNumber);
 	STUDENT s = CreateStudent(nameBuffer, studentNumber);
 	return s;
+}
+
+void RemoveStudent(STUDENT s)
+{
+	free(s.name);
 }

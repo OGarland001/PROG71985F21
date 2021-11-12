@@ -15,6 +15,7 @@
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <stdbool.h>
 
 #define STUDENTLEN				50
 #define MAXBUFFER				80
@@ -28,5 +29,12 @@ typedef struct student
 STUDENT CreateStudent(char[], int);
 void PrintStudent(STUDENT);
 
+int GetStudentNumber(STUDENT);
+
+bool CompareStudents(STUDENT, STUDENT);
+STUDENT CopyStudent(STUDENT);
+
 void streamPrintStudent(FILE*, STUDENT);
 STUDENT streamReadStudent(FILE*);
+
+void DisposeStudent(STUDENT);

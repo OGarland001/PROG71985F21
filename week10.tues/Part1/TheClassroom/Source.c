@@ -56,5 +56,6 @@ int main(void)
 
 	//printf("print classroom d\n");
 	//PrintClassroom(d);
+	RemoveStudent(jimmy);
 	return 0;
 }

@@ -1,13 +1,2 @@
-﻿  item.c
-  ListADT.c
-  listNode.c
-  Source.c
-  Generating Code...
-ListADT.obj : error LNK2019: unresolved external symbol _CreateNode referenced in function _AddItemToList
-Source.obj : error LNK2001: unresolved external symbol _CreateNode
-ListADT.obj : error LNK2019: unresolved external symbol _GetNodeNextNode referenced in function _AddItemToList
-ListADT.obj : error LNK2019: unresolved external symbol _SetNodeNextNode referenced in function _AddItemToList
-ListADT.obj : error LNK2019: unresolved external symbol _DisposeNode referenced in function _RemoveItemFromList
-Source.obj : error LNK2001: unresolved external symbol _DisposeNode
-Source.obj : error LNK2019: unresolved external symbol _DisposeList referenced in function _main
-C:\Users\steve\OneDrive\ownCloud\_PROG71985\github\week10\Debug\ex2.exe : fatal error LNK1120: 5 unresolved externals
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ex2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  ex2.vcxproj -> C:\Users\steve\OneDrive\ownCloud\_PROG71985\PROG71985F21\week10.wed\Part2\Debug\ex2.from.Week10.prep.exe

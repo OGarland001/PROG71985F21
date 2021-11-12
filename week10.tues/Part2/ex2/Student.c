@@ -47,3 +47,27 @@ STUDENT streamReadStudent(FILE* fp)
 	STUDENT s = CreateStudent(nameBuffer, studentNumber);
 	return s;
 }
+
+
+/// <summary>
+/// take a properly formed student instamce and returns a new student instamce with the values set to the original
+/// </summary>
+/// <param name="src"></param>
+/// <returns></returns>
+STUDENT CopyStudent(STUDENT src)
+{
+	return(CreateStudent(src.name, src.studentnum));
+}
+
+bool CompareStudents(STUDENT a, STUDENT b)
+{
+	if (a.studentnum == b.studentnum)
+		return true;
+	else
+		return false;
+}
+
+void DisposeStudent(STUDENT s)
+{
+	;  //nothing to do - no malloc
+}

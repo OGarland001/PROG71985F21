@@ -12,14 +12,14 @@
 typedef struct item
 {
 	int data;
-}ITEM, * PITEM;
+}STUDENT, * PITEM;
 
-ITEM CreateItem(int);
+STUDENT CreateStudent(int);
 
-ITEM CopyItem(ITEM);
+STUDENT CopyItem(STUDENT);
 
-bool CompareItems(ITEM, ITEM);
+bool CompareStudents(STUDENT, STUDENT);
 
-void DisplayItem(ITEM);
+void PrintStudent(STUDENT);
 
-void DisposeItem(ITEM);
+void DisposeStudent(STUDENT);
