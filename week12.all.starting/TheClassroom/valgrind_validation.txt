@@ -1,0 +1,25 @@
+==304027== Memcheck, a memory error detector
+==304027== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==304027== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==304027== Command: ./Source
+==304027== 
+==304027== 
+==304027== FILE DESCRIPTORS: 3 open at exit.
+==304027== Open file descriptor 2: /home/steve/ownCloud/000-CurrentSchoolTerm/_PROG71985/PROG71985F21/week12.all.starting/TheClassroom/valgrind_validation.txt
+==304027==    <inherited from parent>
+==304027== 
+==304027== Open file descriptor 1: /dev/pts/0
+==304027==    <inherited from parent>
+==304027== 
+==304027== Open file descriptor 0: /dev/pts/0
+==304027==    <inherited from parent>
+==304027== 
+==304027== 
+==304027== HEAP SUMMARY:
+==304027==     in use at exit: 0 bytes in 0 blocks
+==304027==   total heap usage: 9 allocs, 9 frees, 10,608 bytes allocated
+==304027== 
+==304027== All heap blocks were freed -- no leaks are possible
+==304027== 
+==304027== For lists of detected and suppressed errors, rerun with: -s
+==304027== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
